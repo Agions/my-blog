@@ -59,6 +59,7 @@
     }
   },
   "dependencies": {
+    "@release-it/conventional-changelog": "^8.0.1",
     "cz-conventional-changelog": "^3.3.0",
     "sass": "^1.70.0",
     "validate-commit-msg": "^2.14.0"
