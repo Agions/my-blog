@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { useAttrs, ref } from "vue";
+import { ref } from "vue";
 import { useRouter } from "nuxt/app";
-const layoutCustomProps = useAttrs();
 const router = useRouter();
-console.log(layoutCustomProps.title, layoutCustomProps, "custom"); // I am a custom layout
 const activeIndex = ref<string>("/");
 const handleSelect = (key: string, keyPath: string[]) => {
   router.push(key);
@@ -22,6 +20,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
       <el-menu-item index="/utils">常用方法 </el-menu-item>
       <el-menu-item index="/mine">关于我</el-menu-item>
     </el-menu>
+    <slot />
   </div>
 </template>
 <style lang="scss">
