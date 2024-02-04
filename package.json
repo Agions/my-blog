@@ -1,13 +1,61 @@
 {
+  "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "commit": "git-cz",
+    "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore ."
   },
   "devDependencies": {
-    "nuxt": "3.0.0"
+    "@pinia/nuxt": "^0.5.1",
+    "nuxt": "^3.10.0",
+    "vue": "^3.4.15",
+    "vue-router": "^4.2.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "build",
+        "ci",
+        "chore",
+        "revert"
+      ],
+      "scope": {
+        "required": false,
+        "allowed": [
+          "*"
+        ],
+        "validate": false,
+        "multiple": false
+      },
+      "warnOnFail": false,
+      "maxSubjectLength": 100,
+      "subjectPattern": ".+",
+      "subjectPatternErrorMsg": "subject does not match subject pattern!",
+      "helpMessage": "",
+      "autoFix": false
+    }
+  },
+  "dependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "validate-commit-msg": "^2.14.0"
   }
 }
