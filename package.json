@@ -12,6 +12,7 @@
     "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore ."
   },
   "devDependencies": {
+    "@element-plus/nuxt": "^1.0.7",
     "@pinia/nuxt": "^0.5.1",
     "nuxt": "^3.10.0",
     "vue": "^3.4.15",
@@ -56,6 +57,7 @@
   },
   "dependencies": {
     "cz-conventional-changelog": "^3.3.0",
+    "sass": "^1.70.0",
     "validate-commit-msg": "^2.14.0"
   }
 }
