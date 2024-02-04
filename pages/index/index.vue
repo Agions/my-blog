@@ -8,7 +8,9 @@ useHead({
 });
 </script>
 <template>
-  <div>学习笔记</div>
+  <el-main class="el-main-body">
+    <div>学习笔记</div>
+  </el-main>
 </template>
 
 <style lang="scss"></style>
