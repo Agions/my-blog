@@ -8,13 +8,16 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "commit": "git-cz",
+    "commit": "git-cz ",
+    "pub": "git add && release-it && git-cz ",
+    "release": "release-it",
     "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore ."
   },
   "devDependencies": {
     "@element-plus/nuxt": "^1.0.7",
     "@pinia/nuxt": "^0.5.1",
     "nuxt": "^3.10.0",
+    "release-it": "^17.0.3",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"
   },
