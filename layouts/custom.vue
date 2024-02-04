@@ -22,6 +22,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
       <el-menu-item index="/utils">常用方法 </el-menu-item>
       <el-menu-item index="/mine">关于我</el-menu-item>
     </el-menu>
+    <slot></slot>
   </div>
 </template>
 <style lang="scss">
