@@ -8,8 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "pub": "git add . && git-cz  && release-it ",
-    "commit": " git-cz ",
+    "commit": " git-cz",
     "release": "release-it",
     "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore ."
   },
