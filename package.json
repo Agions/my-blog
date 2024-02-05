@@ -63,5 +63,5 @@
     "sass": "^1.70.0",
     "validate-commit-msg": "^2.14.0"
   },
-  "version": "1.0.2"
+  "version": "1.0.3"
 }
